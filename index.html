@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="clickbtn">
+                        <div class="intro">
+                            <p>Here is everything i have built.</p>
+                        </div>
+                        <a href="#">Project</a>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <script>
+        let clickBtn = document.querySelector(".clickbtn");
+        let popUp = document.querySelector(".intro")
+
+        clickBtn.addEventListener("click",()=>{
+           popUp.classList.toggle("is-active")
+        })
+
+        
+    </script>
+</body>
+</html>
